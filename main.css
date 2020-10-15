@@ -10,6 +10,13 @@ a{
     text-decoration: none;
 }
 
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+h3,h4,p, span{
+    font-family: 'Work Sans';
+}
 ul{
     margin: 0;
     padding: 0;
