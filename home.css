@@ -4,8 +4,31 @@ video{
 max-width:100%;
 }
 
-.row{
+.col{
   width:50%;
+  float:left;
+  padding:50px;
+    text-align: center;
+
+}
+#contentbox{
+  border: 1px solid grey;
+      margin-top:50px;
+}
+
+/* #wrapper{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+} */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+
 }
 
 .banner{
@@ -18,6 +41,16 @@ max-width:100%;
   background-repeat: no-repeat;
   background-size: cover;
     overflow: hidden;
+}
+
+@media(max-width:1025px){
+
+  .container{
+
+    flex-direction: column;
+
+
+  }
 }
 
 /* end of home page */
