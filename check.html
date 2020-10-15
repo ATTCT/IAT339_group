@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>P02:Bar Candy</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="checkout.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <a href=""><img class="logo" src="img/logo.jpg"></a>
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="client.html">Clients</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li>
+                <div class="nav-dropdown">
+                    <button class="dropbtn">About Us</button>
+                    <div class="nav-content">
+                        <a href="about.html">Whats Bar Candy®</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </header>
+
+    <div class="checkout-container">
+        <div class=" item-container">
+            <div class="item-list">
+                <div class="row">
+                    <img src="img/smore.jpg" alt="smore"> 
+                </div>
+                <div class="column">
+                    <h4> Smores</h4>
+                    <p>Description: 1 oz Vodka, choc sauce, cream, graham cracker rim, float lg marshmallow and flame</p>
+                    <span> $20.00</span>
+                </div>
+            </div>
+            <div class="item-list">
+                <div class="row">
+                    <img src="img/whitechoco.jpg" alt="whitechoco">
+                </div>
+                <div class="column">
+                    <h4> White choc caramel-tini</h4>
+                    <p>Description: white choc syrup,  caramel syrup or sauce, heavy cream, vanilla vodka</p>
+                    <span> $20.00</span>
+                </div>
+            </div>
+            <div class="item-list">
+                <div class="row">
+                    <img src="img/st.jpg" alt="st">
+
+                </div>
+                <div class="column">
+                    <h4> Strawberry Fields</h4>
+                    <p>Description: Strawberry puree, strawberry vodka, coconut milk, cream</p>
+                    <span> $20.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="checkout">
+                <label for="promocode"> </label>
+                <h4>Enter Promotion Code</h4>
+                <input type="text" name="promocode" id="promocode">
+
+                <hr class="checkhr">
+
+                <label for="promocode"></label>
+                <h4>Shipping Method</h4>
+                <select name="Prefix">
+                    <option value="prefix">Select Option..</option>
+                    <option value="mr.">Standard Shipping</option>
+                    <option value="mrs.">Express Shipping</option>
+                </select>
+                <br>
+                <p> Shipping Cost :
+                $60.00</p>
+                
+                <p> Sales Tax :
+                $6.00 </p>
+                <hr class="checkhr">
+                <h4>Total $66.00</h4>
+                <button>Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-container">
+        <div class="payment">
+            <div class="form">
+                <div class="column">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="Bob Cha">
+                    <Br><br>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="text" name="email" id="email" placeholder="BobCha@123.com">
+
+                    <br><Br>
+                    <label for="address">Address</label>
+                    <br>
+                    <input type="text" name="address" id="address" placeholder="12th Ave">
+
+                    <br><Br>
+                    <label for="city">City</label>
+                    <br>
+                    <input type="text" name="city" id="city" placeholder="Vancouver">
+
+                    <br><Br>
+                    <label for="pcode">Postal Code</label>
+                    <br>
+                    <input type="text" name="pcode" id="pcode" placeholder="V2Y29S">
+                </div>
+                <div class="column">
+                    <label for="cName">Name on Card</label>
+                    <br>
+                    <input type="text" name="cName" id="cName" placeholder="Bob Cha">
+
+                    <br><Br>
+                    <label for="cc">Credit Card</label>
+                    <br>
+                    <input type="text" name="cc" id="cc" placeholder="1111-2222-3333-4444">
+
+                    <br><Br>
+                    <label for="expireD">Expire Date</label>
+                    <br>
+                    <input type="text" name="expireD" id="expireD" placeholder="01/22">
+
+
+                    <br><Br>
+                    <label for="cvv">CVV</label>
+                    <br>
+                    <input type="text" name="cvv" id="cvv" placeholder="000">
+
+                    <br><br>
+                    <Br>
+                    <button type="submit">Sumbit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
