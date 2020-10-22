@@ -28,6 +28,10 @@ ul{
     overflow: hidden;
 }
 
+.main-nav a{
+    color: brown;
+}
+
 .nav-dropdown{
     float:left;
     overflow: hidden;
@@ -37,7 +41,7 @@ ul{
     font-size: 20px;  
     border: none;
     outline: none;
-    color: black;
+    color: brown;
     padding: 10px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -54,7 +58,7 @@ ul{
   
   .nav-content a {
     float: none;
-    color: black;
+    color: brown;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
