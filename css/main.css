@@ -10,7 +10,7 @@ a{
     text-decoration: none;
 }
 
-h1, h2, nav{
+h1, h2{
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -34,7 +34,7 @@ ul{
 }
 
 .nav-dropdown .dropbtn {
-    font-size: 20px;
+    font-size: 20px;  
     border: none;
     outline: none;
     color: black;
@@ -43,7 +43,7 @@ ul{
     font-family: inherit;
     margin: 0;
   }
-
+  
   .nav-content {
     display: none;
     position: absolute;
@@ -51,7 +51,7 @@ ul{
     min-width: 160px;
     z-index: 1;
   }
-
+  
   .nav-content a {
     float: none;
     color: black;
@@ -60,11 +60,11 @@ ul{
     display: block;
     text-align: left;
   }
-
+  
   .nav-content a:hover {
     background-color: #ddd;
   }
-
+  
   .nav-dropdown:hover .nav-content {
     display: block;
   }
@@ -183,7 +183,7 @@ input[type=text]{
         flex-direction: row;
         justify-content: space-around;
     }
-
+    
     .faq-form, .blog{
         width: 50%;
     }
