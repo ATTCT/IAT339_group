@@ -55,15 +55,14 @@ h2{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 @media(max-width:1025px){
 
   .container{
-
     flex-direction: column;
-      margin: 50px 100px 50px 100px;
+    margin: 50px 100px 50px 100px;
   }
 
   .col{
