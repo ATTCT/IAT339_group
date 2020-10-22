@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 50px 200px 50px 200px;
+
+}
+
+.col{
+  width:20%;
+  /* float:left; */
+  padding:15px;
+}
+@media(max-width:1025px){
+
+  .container{
+
+    flex-direction: column;
+      margin: 50px 100px 50px 100px;
+  }
+
+  .col{
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding:10px;
+  }
+
+}
