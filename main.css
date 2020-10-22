@@ -95,7 +95,6 @@ header,.main-nav a{
 .contact-content{
     margin-top: 20px;
     border: 1px solid black;
-    width:50%;
     background-color: thistle;
     align-items: center;
 }
@@ -166,6 +165,19 @@ input[type=text]{
     }
 }
 
+@media(min-width:769px){
+    .contact-content{
+        width:60%;
+    }
+
+    .contact-form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
 @media(min-width:1025px){
     header{
         flex-direction: row;
@@ -174,5 +186,19 @@ input[type=text]{
     
     .faq-form, .blog{
         width: 50%;
+    }
+    .contact-content{
+        width:55%;
+    }
+    .contact-form{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+}
+
+@media(min-width:1441px){
+    .contact-content{
+        width:55%;
     }
 }
