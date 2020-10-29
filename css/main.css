@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     background-color: #ecddc9;
@@ -114,6 +115,9 @@ header,.main-nav a{
     margin:0;
     padding:0;
 }
+video{
+    padding-bottom:10px;
+}
 footer{
     text-align: center;
     padding-top:2rem;
@@ -134,9 +138,7 @@ main {
     flex-direction: column;
     align-items: stretch;
 }
-/* .footercontent{
-    margin-bottom:10px;
-} */
+
 @media (min-width:426px){
     header, .main-nav{
         display: flex;
