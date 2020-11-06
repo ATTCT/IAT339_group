@@ -145,8 +145,7 @@ h2{
 .wrapper{
   overflow: hidden;
   position: relative;
-    /* margin: 0;
-    text-align: left; */
+    
 }
 .wrapper:before{
   content:"";
@@ -161,7 +160,6 @@ h2{
   padding-top:5rem;
   
   padding-bottom:5rem;
-  /* border: 2px solid brown; */
 }
 #whitebg{
   background-color:white;
