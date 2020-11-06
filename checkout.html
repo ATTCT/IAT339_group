@@ -1,110 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>P02:Bar Candy</title>
-
   <link href="css/main.css" rel="stylesheet">
   <link href="css/checkout.css" rel="stylesheet">
-
 
 </head>
 
 <body>
-<div class="whole">
- <header>
-  <a href=""><img class="logo" src="img/logo.jpg"></a>
-  <ul class="main-nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="client.html">Clients</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li>
-      <div class="nav-dropdown">
-        <button class="dropbtn">About Us</button>
-        <div class="nav-content">
-          <a href="about.html">Whats Bar Candy®</a>
-          <a href="blog.html">Blog</a>
-          <a href="faq.html">FAQ</a>
+  <div class="whole">
+    <header>
+      <a href=""><img class="logo" src="img/logo.jpg" alt="logo"></a>
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="client.html">Clients</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li>
+          <div class="nav-dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="nav-content">
+              <a href="about.html">Whats Bar Candy®</a>
+              <a href="blog.html">Blog</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </header>
+
+    <!-- Code inspired from https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+
+    <main>
+      <div class="row">
+        <div class="collum-3">
+          <div class="box">      
+            <div class="row">
+              <div class="collum-2">
+                <h3>Billing Address</h3>
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <label for="adr">Address</label>
+                <input type="text" id="adr" name="address" placeholder="Address">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City">
+
+                <div class="row-1">
+                  <div class="collum-2">
+                    <label for="province">Province</label>
+                    <input type="text" id="province" name="province" placeholder="Province">
+                  </div>
+                  <div class="collum-2">
+                    <label for="postal">Postal Code</label>
+                    <input type="text" id="postal" name="postal" placeholder="Postal Code">
+                  </div>
+                </div>
+              </div>
+
+              <div class="collum-2">
+                <h3>Payment</h3>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="Name on Card">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="Credit card number">
+                <label for="expmonth">Expiry Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="Expiry Month">
+                <div class="row-1">
+                  <div class="collum-2">
+                    <label for="expyear">Expiry Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="Expiry Year">
+                  </div>
+                  <div class="collum-2">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Checkout" class="button">
+          </div>
+        </div>
+        <div class="collum-1">
+          <div class="box">
+           <div class="cart">
+            <h3>Cart</h3>
+            <hr>
+
+
+            <p><a href="menu.html">Smores</a><span class="price">$20</span></p>
+            <p><a href="menu.html">White choc caramel-tini</a><span class="price">$20</span></p>
+            <p><a href="menu.html">Strawberry Fields</a><span class="price">$20</span></p>
+            <hr>
+            <p>Total <span class="price"><b>$60</b></span></p>
+          </div>
         </div>
       </div>
-    </li>
-    <li><a href="contact.html">Contact us</a></li>
-  </ul>
-</header>
-<!-- Checkout class // -->
-
-<!-- Code for Forms https://www.w3schools.com/html/html_forms.asp -->
-
-<main>
-<div class="checkout">
-  <div class="box">
-    <div class="container">
-
-
-      <label for="fname" >Full Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Darren Whiteside">
-
-      <label for="email"> Email</label>
-      <input type="text" id="email" name="email" placeholder="DWhiteside@example.com">
-
-      <label for="address">Address</label>
-      <input type="text" id="address" name="address" placeholder="123 Howe Street">
-
-      <label for="city">City</label>
-      <input type="text" id="city" name="city" placeholder="Vancouver">
-
-      <label for="province">Province</label>
-      <input type="text" id="province" name="province" placeholder="BC">
-
-      <label for="postalcode">Postal Code</label>
-      <input type="text" id="postalcode" name="postalcode" placeholder="A1B2C3">
-
-      <label for="cdname">Name on Card</label>
-      <input type="text" id="cdname" name="cardname" placeholder="Darren Whiteside">
-
-      <label for="credit">Credit card number</label>
-      <input type="text" id="credit" name="cardnumber" placeholder="0000-0000-0000-0000">
-
-      <label for="month">Exp Month</label>
-      <input type="text" id="month" name="month" placeholder="October">
-
-      <label for="year">Exp Year</label>
-      <input type="text" id="year" name="year" placeholder="2020">
-
-      <label for="cvv">CVV</label>
-      <input type="text" id="cvv" name="cvv" placeholder="000">
-
-
-
     </div>
-
-    <!-- <input type="submit" value="Checkout" class="button-nav"> -->
-<button>Checkout</button>
-
-  </div>
-</div>
-
-
-<div class="cart">
-  <h4>Cart
-
-  </h4>
-
-
-  <div class="price">
-    <p><a href="#">Product 1 </a> $20</p>
-    <p><a href="#">Product 2 </a> $20</p>
-    <p><a href="#">Product 3 </a> $20</p>
-    <hr>
-    <p>Total <b>$60</b></p>
-
-  </div>
-</div>
-</main>
-<footer>
-  <h2>Citation</h2>
+  </main>
+  <footer>
+    <h2>Citation</h2>
     <p>Font. Retrieved from <a href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Work+Sans:wght@300;400&display=swap">https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Work+Sans:wght@300;400&display=swap</a></p>
     <p>Images. Retrieved from <a href="http://www.bar-candy.com/">http://www.bar-candy.com/</a></p>
     <h2>Styleguide</h2>
@@ -112,9 +115,8 @@
     <p>&copy; 2020 Bar Candy </p>
 
 
-</footer>
+  </footer>
 
 </div>
 </body>
-
 </html>

@@ -50,7 +50,7 @@
   margin-top: 30px;
   padding: 15px;
   color: white;
-  background-color: #e7e7de;
+  background-color: gray;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -58,7 +58,7 @@
 }
 
 .product .button:hover {
-  background-color: #999999;
+  background-color: burlywood;
   color: black;
 }
 
