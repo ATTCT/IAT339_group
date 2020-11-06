@@ -1,24 +1,18 @@
 
 .container{
-  /*display: flex;*/
-  /*align-items: stretch;*/
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
-  /*justify-content: left;*/
 }
 
-/*Code inspired from product list from https://www.w3schools.com/howto/howto_css_product_card.asp*/
+/*Code learned from product list from https://www.w3schools.com/howto/howto_css_product_card.asp*/
 
 .product {
  text-align: center;
  align-content: center;
  font-family: arial;
  background-color: #ffffff;
- /*/*box-shadow: 0 4px 8px 0 #0f3057;*/
-
  max-width: 350px;
- /*max-height: 700px;*/
  margin: 70px 50px 50px 50px;
  padding: 30px;
  
