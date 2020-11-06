@@ -234,10 +234,6 @@ footer .container{
   .testimonial{
     width:auto;
   }
-  #citationbox{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+  
 }
 /* end of home page */

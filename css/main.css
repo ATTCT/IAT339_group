@@ -80,7 +80,13 @@ ul{
   .nav-dropdown:hover .nav-content {
     display: block;
   }
-
+  .link:hover{ 
+    color: darkblue; 
+    text-decoration: none; 
+  } 
+  .link:focus{ 
+    color: brown; 
+  } 
 .logo{
     min-height: 50px;
     max-height: 50px;
