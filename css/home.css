@@ -1,5 +1,5 @@
 /* home page */
-*{
+h3{
   margin: 0;
   padding: 0;
   border: 0;
@@ -94,17 +94,7 @@ h2{
 
 }
 
-#learnmore{
-  text-align: right;
-  float:right;
-}
-#learnmore:hover{
-  color: darkblue;
-  text-decoration: none;
-}
-#learnmore:focus{
-  color: brown;
-}
+
 .banner{
   width:100%;
   max-width: 100%;
@@ -141,7 +131,7 @@ h2{
   visibility: visible;
   opacity: 1;
 }
-.logoname {
+.productname {
   color: black;
   font-size:2rem;
   text-align: center;
@@ -176,6 +166,10 @@ h2{
 #whitebg{
   background-color:white;
 }
+#learnmore{
+  text-align: right;
+  float:right;
+}
 .testimonial{
   text-align: center;
   background-color: transparent;
@@ -186,11 +180,20 @@ h2{
   font-size:2vh;
   top:0px;
 }
+footer .container{
+  margin:0;
+}
+@media(max-width:1550px){
+  .container{
+    margin: 50px 100px 50px 100px;
+  }
+}
 
 @media(max-width:1025px){
 
   .container{
     flex-direction: column;
+    align-items: center;
     margin: 50px 100px 50px 100px;
   }
 
@@ -200,7 +203,41 @@ h2{
     padding-bottom:10px;
     padding:10px;
   }
-
+ 
 }
+@media(max-width:490px){
+  #productmenu{
+    top:45%;
+  }
 
+  #slogan{
+    font-size:x-large;
+  }
+}
+@media(max-width:400px){
+  .container{
+    margin:10px 50px 10px 50px;
+    overflow:hidden;
+  }
+   #productmenu{
+    top:50%;
+  } 
+  .col{
+    padding:0;
+  }
+   #slogan{
+    top:40%;
+  } 
+  footer{
+    flex-wrap: wrap;
+  }
+  .testimonial{
+    width:auto;
+  }
+  #citationbox{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 /* end of home page */
